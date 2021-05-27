@@ -5,7 +5,7 @@
 
 - 🌱 I am in the process of perfecting my learning of **NodeJS**
 
-- 💻 All my projects are available [HERE](example.com)
+- 💻 All my projects are available [HERE](project/)
 
 - 📫 How to reach me **Yaniv#1891** (discord)
 <h3 align="left">Languages and tools :</h3>

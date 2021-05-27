@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+    <title>@TEMP.MAIL</title>
+</head>
+
+<body>
+    <div class="nav">
+        <nav>
+            <h1 class="title" style="cursor: pointer;"><strong>@</strong>temp.<strong>mail</strong></h1>
+            <info>
+                <email><i class="fas fa-envelope"></i><br>
+                    <p id="dta_email"></p>
+                </email>
+                <br>
+                <br>
+                <password><i class="fas fa-key"></i><br>
+                    <p id="dta_pass"></p>
+                </password>
+                <br>
+                <br>
+                <new><i class="fas fa-user-secret"></i><br>
+                    <p id="dta_new">New Email</p>
+                </new>
+                <br>
+                <br>
+                <connexion><i class="fas fa-user-alt"></i><br>
+                    <p>Log In</p>
+                </connexion>
+                <br>
+                <br>
+                <delete>
+                    <i class="fas fa-trash-alt"></i><br>
+                    <p>Delete the account</p>
+                </delete>
+            </info>
+            <p class="value"><span class="spn">-</span>mo / 40mo</p>
+            <div class="progress_bg">
+                <div class="progress" id="progress"></div>
+            </div>
+        </nav>
+        <div class="reception">
+            <h1 class="mailbox">Mailbox</h1>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@3/dark.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cemalgnlts/Mailjs/Mailjs.min.js"></script>
+    <script src="./index.js"></script>
+    <script src="https://kit.fontawesome.com/2e7fe0f0e4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.userIMG span::selection{
+    background-color: transparent;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+body{
+    background-color: rgb(211, 225, 238);
+    color: rgb(250, 236, 236);
+}
+nav{
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background-color: rgb(245, 245, 245);
+    border-radius: 0 20px 20px 0;
+}
+strong{
+    color: tomato;
+}
+.title{
+    font-size: 30px;
+    width: 100%;
+    border-radius: 20px;
+    position: absolute;
+    top: 15px;
+    text-align: center;
+    color: rgb(39, 39, 39);
+}
+info{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    top: 15%;
+    text-align: center;
+    color: rgb(39, 39, 39);
+    font-weight: 400;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+email, password, new, connexion, delete, create{
+    transition: 0.1s ease-in-out;
+}
+email:hover, password:hover, new:hover, connexion:hover, delete:hover, create:hover{
+    color: tomato;
+}
+#dta_pass{
+    filter: blur(3px);
+}
+.swal2-input{
+    color: tomato;
+}
+.progress_bg{
+    width: 80%;
+    height: 10px;
+    position: absolute;
+    background-color: rgb(195, 195, 195);
+    border-radius: 20px;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.progress{
+    width: 10%;
+    height: 10px;
+    position: absolute;
+    background-color: tomato;
+    border-radius: 20px;
+}
+.value{
+    color: rgb(34, 34, 34);
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.reception{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    left: 20%;
+}
+.mailbox{
+    position: relative;
+    width: 100%;
+    top: 40px;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: rgb(39, 39, 39);
+}
+.mail{
+    background-color: rgba(17, 74, 112, 0.493);
+    position: relative;
+    width: 90%;
+    height: 18vh;
+    top: 100px;
+    border-radius: 10px;
+    left: 5%;
+    display: flex;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.userIMG{
+    position: absolute;
+    background-color: tomato;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.userIMG span{
+    color: rgb(207, 207, 207);
+    font-weight: 900;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 40px;
+}
+.info_sender{
+    text-align: center;
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+.info_sender .name{
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(53, 53, 53);
+    font-weight: 900;
+}
+.info_sender .email{
+    width: 100%;
+    text-align: center;
+    left: 50%;
+    position: absolute;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    color: rgb(53, 53, 53);
+}
+.info{
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    left: 60%;
+    color: rgb(53, 53, 53);
+    font-weight: 900;
+    text-align: center;
+}
+.description{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    color: rgb(34, 34, 34);
+    font-size: 15px;
+    font-weight: 200;
+}
+.subject{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    color: rgb(34, 34, 34);
+    font-size: 15px;
+    font-weight: 600;
+}
+.mail:hover{
+    background-color: rgba(28, 92, 134, 0.493);
+}

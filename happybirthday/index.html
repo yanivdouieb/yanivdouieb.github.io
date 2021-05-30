@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@9.1.1/dist/css/autoComplete.min.css">
+
+    <title>HAPPY BIRTHDAY 🎉</title>
+</head>
+
+<body>
+    <div class="config">
+        <input type="text" id="name" placeholder="First Name" value="John">
+        <input type="text" id="emoji" placeholder="Emoji" value="🎉">
+        <textarea id="text" cols="30" rows="10" placeholder="Your message"></textarea>
+        <select id="color">
+            <option value="select" id="select">-- COLOR --</option>
+            <option value="red" id="red">RED</option>
+            <option value="yellow" id="yellow">YELLOW</option>
+            <option value="green" id="green">GREEN</option>
+            <option value="lightblue" id="lightblue">LIGHT BLUE</option>
+            <option value="darkblue" id="darkblue">DARK BLUE</option>
+            <option value="purple" id="purple">PURPLE</option>
+        </select>
+        <select id="font">
+            <option value="select" id="select">-- FONT --</option>
+            <option value="limelight">Limelight</option>
+            <option value="odibee">Odibee Sans</option>
+            <option value="sigmar">Sigmar One</option>
+            <option value="stint">Stint Ultra Condensed</option>
+            <option value="pattaya">Pattaya</option>
+            <option value="kuaiLe">ZCOOL KuaiLe</option>
+            <option value="varela">Varela Round</option>
+            <option value="indie">Indie Flower</option>
+            <option value="amatic">Amatic SC</option>
+        </select>
+        <button class="generate" id="send">SEND !</button>
+    </div>
+    <div class="live">
+        <div id="bg"></div>
+        <div class="ctn">
+            <h1 class="hi" id="hi">Hi <name>John</name> !</h1>
+            <h3 class="happy" id="happy">Happy Birthday <Emoji id="Emoji"></Emoji>
+                <p class="msg" id="msg"></p>
+            </h3>
+        </div>
+    </div>
+    <script src="./fgEmojiPicker.js"></script>
+    <script src="./script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        new FgEmojiPicker({
+            trigger: ['#emoji', '#emoji'],
+            position: ['bottom', 'right'],
+            emit(obj, triggerElement) {
+                const emoji = obj.emoji;
+                document.querySelector('#emoji').value = emoji;
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -115,7 +115,7 @@ send.addEventListener("click", () => {
   var uFont = btoa(localStorage.getItem("font"));
   var uName = btoa(localStorage.getItem("name"));
   var uMsg = btoa(localStorage.getItem("msg"));
-  var baseUrl = "/happy/";
+  var baseUrl = "/happybirthday/happy/";
   var url = `${baseUrl}?bg=${uBgColor}&emoji=${uEmoji}&font=${uFont}&name=${uName}&msg=${uMsg}`;
   var api = "12abbdbc8a193980157fc64cea4190d1be77c";
   document.getElementsByTagName(

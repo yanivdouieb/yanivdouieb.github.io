@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    background: #F9F7E8;
+}
+.movieName{
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 61px;
+    position: fixed;
+    top: 7%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    color: #1B1D1C;
+    width: 60%;
+}
+.swal2-title{
+    font-family: 'Playfair Display' !important;
+    color: #1B1D1C !important;
+}
+.movieDetail{
+    position: fixed;
+    width: 40%;
+    top: 22%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    flex-direction: row;
+}
+.trailer, .time, .type, .date{
+    font-family: 'Poppins';
+    background: #EFE8D8;
+    position: absolute;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.date{
+    margin: 0;
+}
+.type{
+    text-align: center;
+    width: 150px;
+    margin-left: 22%;
+}
+.time{
+    margin-left: 54%;
+    width: 40px;
+    text-align: center;
+}
+.trailer{
+    margin-left: 67%;
+    color: #E54B4B;
+}
+.overview{
+    font-family: 'Poppins';
+    position: absolute;
+    width: 40%;
+    top: 50%;
+    left: 64%;
+    transform: translate(-50%, -50%);
+}
+.poster{
+    position: absolute;
+    width: 25%;
+    height: 70%;
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+.new{
+    position: absolute;
+    width: 25%;
+    height: 10%;
+    border-radius: 20px;
+    background-color: #E54B4B;
+    top: 90%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.new p{
+    font-family: 'Poppins';
+    font-weight: 800;
+    position: absolute;
+    top: 33%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+}

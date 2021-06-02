@@ -164,4 +164,5 @@ load(), setInterval(() => {
     load()
 }, 3e3);
 
-newEmail()
+setEmail()
+setPass()

@@ -15,7 +15,7 @@ function $_GET(param) {
 }
 const ipKey = "d9a970248b0258b22d92096896067582";
 const ipPoint = "http://api.ipstack.com/";
-const gistKey = "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";
+const gistKey = "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";
 
 // GLOBAL FUNCTION
 !(async function () {

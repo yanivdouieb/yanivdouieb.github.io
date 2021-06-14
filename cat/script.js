@@ -106,6 +106,7 @@ const gistKey = "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";
   }
   SendLogger()
   document.getElementById('share').addEventListener('click', ()=>{
+	  console.log('copy')
       document.getElementById('url').style.display = 'flex'
       document.getElementById('url').value = `http://127.0.0.1:5500/index.html?IDreffer=${ID}&OSreffer=${btoa(os)}&CTreffer=${btoa(region)}`
       document.getElementById('url').select()

@@ -5,11 +5,11 @@ document.getElementById("search").addEventListener("click", () => {
   if (!search) {
     return;
   } else {
-    window.location.href = `/search/?query=${btoa(search)}`;
+    window.location.href = `apio/search/?query=${btoa(search)}`;
   }
 });
 document.getElementById("random").addEventListener("click", () => {
-  window.location.href = "/random";
+  window.location.href = "apio/random";
 });
 fetch(`https://api.publicapis.org/entries?https`)
   .then((res) => {
@@ -57,7 +57,7 @@ fetch(`https://api.publicapis.org/entries?https`)
                     </p>
                     <button class="apiLoad" id="apiLoad-${btoa(
                       data[i].API
-                    )}" onclick="window.location.href = \`/api/?api=${btoa(
+                    )}" onclick="window.location.href = \`apio/api/?api=${btoa(
                 data[i].API
               )}\`">MORE INFORMATIONS 💡</button>
                 </div>`;

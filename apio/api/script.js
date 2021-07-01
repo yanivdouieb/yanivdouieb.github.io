@@ -86,7 +86,7 @@ fetch(`https://api.publicapis.org/entries?title=${atob($_GET('api'))}`)
 
 setInterval(()=>{
   if($_GET('query')){
-    window.location.href = `/search/?query=${$_GET('query')}`
+    window.location.href = `apio/search/?query=${$_GET('query')}`
   }
 }, 100)
 const uri = "http://127.0.0.1:5501/"
@@ -99,5 +99,5 @@ document.getElementById('search').addEventListener('click', ()=>{
     }
 })
 document.getElementById('random').addEventListener('click', ()=>{
-    window.location.href = '/random'
+    window.location.href = 'apio/random'
 })

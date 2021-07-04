@@ -5,11 +5,11 @@ document.getElementById("search").addEventListener("click", () => {
   if (!search) {
     return;
   } else {
-    window.location.href = `apio/search/?query=${btoa(search)}`;
+    window.location.href = `./apio/search/?query=${btoa(search)}`;
   }
 });
 document.getElementById("random").addEventListener("click", () => {
-  window.location.href = "apio/random";
+  window.location.href = "./apio/random";
 });
 fetch(`https://api.publicapis.org/entries?https`)
   .then((res) => {

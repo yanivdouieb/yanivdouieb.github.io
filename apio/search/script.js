@@ -22,11 +22,11 @@ document.getElementById('search').addEventListener('click', ()=>{
     if(!search){
         return
     }else{
-        window.location.href = `?query=${btoa(search)}`
+        window.location.href = `./?query=${btoa(search)}`
     }
 })
 document.getElementById('random').addEventListener('click', ()=>{
-    window.location.href = 'apio/random'
+    window.location.href = './random'
 })
 fetch(`https://api.publicapis.org/entries?title=${atob($_GET('query'))}`)
   .then((res)=>{return res.json()})
@@ -40,7 +40,7 @@ fetch(`https://api.publicapis.org/entries?title=${atob($_GET('query'))}`)
         <p class="apiDescription" id="apiDescription">
             ${data[i].Description}
         </p>
-        <button class="apiLoad" id="apiLoad-${btoa(data[i].API)}" onclick="window.location.href = \`apio/api/?api=${btoa(data[i].API)}\`">MORE INFORMATIONS 💡</button>
+        <button class="apiLoad" id="apiLoad-${btoa(data[i].API)}" onclick="window.location.href = \`./api/?api=${btoa(data[i].API)}\`">MORE INFORMATIONS 💡</button>
     </div>`
         if(localStorage.getItem(`liked-${btoa(data[i].API)}`)){
             document.getElementById(`apiName-${btoa(data[i].API)}`).innerHTML = `${data[i].API}&nbsp;<like id="like"><i class="fa fa-heart" id="liked"></i></like>`

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/grapesjs/dist/css/grapes.min.css">
+    <link rel="stylesheet" href="./lib/css/grapesjs-preset-webpage.min.css">
+    <title>SNOWW</title>
+</head>
+
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ::-webkit-scrollbar{
+            display: none;
+        }
+    </style>
+    <div id="snoww">
+    </div>
+    <script src="https://unpkg.com/grapesjs"></script>
+    <script src="./lib/js/grapesjs-preset-webpage.min.js"></script>
+    <script src="./lib/js/grapesjs-parser-postcss.min.js"></script>
+    <script src="https://unpkg.com/grapesjs-custom-code"></script>
+    <script src="https://unpkg.com/grapesjs-tabs"></script>
+    <script src="https://unpkg.com/grapesjs-blocks-flexbox"></script>
+    <script src="./lib/js/grapesjs-component-countdown.min.js"></script>
+    <script src="./lib/js/grapesjs-navbar.min.js"></script>
+    <script src="https://unpkg.com/grapesjs-plugin-forms"></script>
+    <script src="./lib/js/grapesjs-blocks-basic.min.js"></script>
+    <script src="https://unpkg.com/grapesjs-plugin-export"></script>
+    <script>
+        var editor = grapesjs.init({
+            container: '#snoww',
+            components: '<h1>My first site with SNOWW</h1>',
+            fromElement: true,
+            width: "auto",
+            StorageManager: false,
+            plugins: ["gjs-preset-webpage", "grapesjs-parser-postcss", "grapesjs-custom-code", "grapesjs-tabs", "gjs-blocks-flexbox", "gjs-component-countdown", "grapesjs-navbar", "grapesjs-plugin-forms", "grapesjs-blocks-basic", "grapesjs-plugin-export"],
+            pluginsOpts: {
+                "gjs-preset-webpage": {},
+                "grapesjs-parser-postcss": {},
+                "grapesjs-custom-code": {},
+                "grapesjs-tabs": {},
+                "gjs-blocks-flexbox": {},
+                "gjs-component-countdown": {},
+                "grapesjs-navbar": {},
+                "grapesjs-plugin-forms": {},
+                "grapesjs-blocks-basic":{},
+                "grapesjs-plugin-export": {}
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "codev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "snowpack dev"
+  },
+  "author": "Yaniv DOUIEB",
+  "license": "ISC",
+  "devDependencies": {
+    "snowpack": "^3.8.2"
+  },
+  "dependencies": {
+    "react-speech-recognition": "^3.8.2",
+    "voice-speech-recognition": "^1.1.2"
+  }
+}

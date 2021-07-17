@@ -1,0 +1,37 @@
+.darkMode{
+    background: rgb(29, 29, 29);
+    color: rgb(240, 240, 240);
+}
+.darkMode .searchInput{
+    color: rgb(255, 255, 255);
+}
+.darkMode .navInfo{
+    color: rgba(255, 255, 255, 0.603) !important;
+}
+.darkMode .error{
+    color: rgb(212, 212, 212);
+}
+.darkMode strong{
+    color: rgb(238, 238, 238);
+}
+.darkMode .user{
+    color: rgba(238, 238, 238, 0.411);
+}
+.darkMode .linkRes{
+    color: rgb(131, 157, 236);
+}
+.darkMode .linkRes:visited{
+    color: rgb(191, 160, 241);
+}
+.darkMode .params_title{
+    color: rgb(218, 218, 218);
+}
+.darkMode .li:hover{
+    color: rgb(220, 165, 246) !important;
+}
+.darkMode .history_title{
+    color: rgb(218, 218, 218);
+}
+.darkMode .linkHistory{
+    color: rgb(233, 233, 233) !important;
+}
